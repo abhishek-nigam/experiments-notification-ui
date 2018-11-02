@@ -1,0 +1,43 @@
+.notification-panel {
+    width: 400px;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+}
+
+.notification-panel-header {
+    text-align: center;
+    padding: 15px 0;
+    
+    font-size: 16px;
+
+    background: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #888;
+}
+
+.badge-count-panel {
+    display: inline-block;
+    padding: 3px 5px;
+    margin-left: 5px;
+
+    background: #26b9b9;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.notification-panel-content {
+    padding: 0 5px;
+    max-height: 300px;
+
+    background: #ccc;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.notification-scroll-container {
+    max-height: inherit;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

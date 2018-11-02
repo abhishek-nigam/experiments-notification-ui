@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    height: 60px;
+
+    background: #fff;
+}
+
+.navbar-item:first-of-type {
+    flex-grow: 1;
+}
+
+#bell-navbar-item {
+    width: 60px;
+
+    color: #bbb;
+}
+
+.fa-bell {
+    position: relative;
+}
+
+.bell-background {
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bell-dark-background {
+    background: #eee;
+}
+
+.badge-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 4px;
+
+    font-size: 8px;
+
+    color: #fff;
+    background: #26b9b9;
+    border-radius: 20px;
+}
