@@ -9,10 +9,26 @@
     flex-grow: 1;
 }
 
-#bell-navbar-item {
+#bell-navbar-item{
     width: 60px;
+    margin-right: 20px;
 
     color: #bbb;
+}
+
+#sync-item {
+    width: 60px;
+    line-height: 60px;
+    
+    font-size: 22px;
+    
+    text-align: center;
+    cursor: pointer;
+    color: #bbb;
+}
+
+#sync-item:hover {
+    color: #aaa;
 }
 
 .fa-bell {

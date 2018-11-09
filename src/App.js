@@ -8,6 +8,7 @@ class App extends Component {
   state = {
     isNotificationOpen: false,
     noOfUnreadNotifications: 10,
+    notificationss: [],
     notifications: [
       {
         id: '001',

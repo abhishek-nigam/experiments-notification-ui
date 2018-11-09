@@ -12,6 +12,9 @@ const navbar = props => {
     return (
         <div className="navbar">
             <div className="navbar-item"></div>
+            <div className="navbar-item" id="sync-item">
+                <i class="fas fa-sync-alt"></i>
+            </div>
             <div className="navbar-item" id="bell-navbar-item">
                 <div
                     className={bellBackgroundClasses}
