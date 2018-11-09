@@ -29,6 +29,13 @@ class App extends Component {
         author_action: 'recenly posted in your group',
         author_image: 'https://cdn.moble.com/w/857/145232/file/test-profile-image.jpg',
         unread: false
+      },
+      {
+        id: '004',
+        author_name: 'Aakash Chawla',
+        author_action: 'recenly posted in your group',
+        author_image: 'https://cdn.moble.com/w/857/145232/file/test-profile-image.jpg',
+        unread: false
       }
     ]
   }

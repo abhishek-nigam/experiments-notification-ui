@@ -7,20 +7,24 @@
 
 .notification-panel-header {
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
+    position: relative;
     
-    font-size: 16px;
+    font-size: 18px;
 
     background: #fff;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: #888;
+    font-weight: 600;
 }
 
 .badge-count-panel {
     display: inline-block;
     padding: 3px 5px;
-    margin-left: 5px;
+    margin-left: 10px;
+
+    font-size: 16px;
 
     background: #26b9b9;
     color: #fff;
@@ -28,10 +32,10 @@
 }
 
 .notification-panel-content {
-    padding: 0 5px;
     max-height: 300px;
+    min-height: 100px;
 
-    background: #ccc;
+    background: #e5e5e5;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
@@ -40,4 +44,29 @@
     max-height: inherit;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.dismiss-all {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-size: 9px;
+
+    color: #ccc;
+    cursor: pointer;
+}
+
+.dismiss-all:hover {
+    color: #bbb;
+}
+
+.caret-up {
+    position: absolute;
+    top: -22px;
+    right: 20px;
+    
+    font-size: 30px;
+
+    color: #fff;
 }

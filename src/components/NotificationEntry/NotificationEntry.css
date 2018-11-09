@@ -1,6 +1,56 @@
 .notification-entry {
     display: flex;
-    padding: 0 20px;
+    height: 100px;
+    padding: 20px 20px;
+    position: relative;
 
-    border-bottom: 1px solid blue;
+    border-bottom: 1.5px solid #ccc;
+    cursor: pointer;
+}
+
+.notification-entry:hover {
+    background: #ddd;
+    box-shadow: #ddd;
+}
+
+.notification-entry:last-of-type {
+    border: 0;
+}
+
+.notification-author-image {
+    width: 80px;
+}
+
+.notification-author-image img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.notification-author-action {
+    flex: 1;
+    height: 60px;
+    padding: 5px 0;
+    line-height: 25px;
+
+    text-overflow: ellipsis;
+    color: #888;
+}
+
+.notification-author-name {
+    font-weight: 600;
+}
+
+.notification-dismiss {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    
+    font-size: 7px;
+    
+    color: #bbb;
+}
+
+.notification-dismiss:hover {
+    color: #aaa;
 }

@@ -1,13 +1,18 @@
 import React from 'react';
 import './NotificationEntry.css';
 
-export default params => (
+export default props => (
     <div className="notification-entry">
         <div className="notification-author-image">
-            <img src={params.author_image} alt="" />
+            <img src={props.author_image} alt="" />
         </div>
         <div className="notification-author-action">
-            <span>{params.author_name}&nbsp;{params.author_action}</span>
+            <p>
+                <span className="notification-author-name">{props.author_name}</span>&nbsp;<span>{props.author_action}</span>
+            </p>
+        </div>
+        <div className="notification-dismiss">
+            <i className="fas fa-circle"></i>
         </div>
     </div>
 )
