@@ -13,7 +13,7 @@ const navbar = props => {
         <div className="navbar">
             <div className="navbar-item"></div>
             <div className="navbar-item" id="sync-item">
-                <i class="fas fa-sync-alt"></i>
+                <i className="fas fa-sync-alt" onClick={props.sync}></i>
             </div>
             <div className="navbar-item" id="bell-navbar-item">
                 <div

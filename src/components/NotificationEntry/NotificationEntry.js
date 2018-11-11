@@ -12,7 +12,7 @@ export default props => (
             </p>
         </div>
         <div className="notification-dismiss">
-            <i className="fas fa-circle"></i>
+            <i className="fas fa-circle" onClick={props.dismiss}></i>
         </div>
     </div>
 )
