@@ -12,6 +12,7 @@ class App extends Component {
     isNotificationOpen: false,
     noOfUnreadNotifications: 0,
     notifications: [],
+    fetchingNotifications: true
   }
 
   ////////////////////
@@ -57,6 +58,11 @@ class App extends Component {
   }
 
   syncButtonClickHandler = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      isNotificationOpen: false,
+      fetchingNotifications: true
+    }));
     this.getNotifications();
   }
 
@@ -109,7 +115,7 @@ class App extends Component {
         this.setState({
           noOfUnreadNotifications: unread,
           notifications: notifications,
-          isNotificationOpen: false
+          fetchingNotifications: false
         });
       });
   };
@@ -158,6 +164,7 @@ class App extends Component {
           toggleOpen={this.toggleIsNotificationOpen}
           unread={this.state.noOfUnreadNotifications}
           sync={this.syncButtonClickHandler}
+          fetching={this.state.fetchingNotifications}
         />
         <NotificationPanel
           isOpen={this.state.isNotificationOpen}

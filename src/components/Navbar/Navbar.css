@@ -28,11 +28,15 @@
 }
 
 #sync-item:hover {
-    color: #aaa;
+    color: #999;
 }
 
 .fa-bell {
     position: relative;
+}
+
+.fa-bell:hover {
+    color: #999;
 }
 
 .bell-background {
@@ -60,4 +64,9 @@
     color: #fff;
     background: #26b9b9;
     border-radius: 20px;
+}
+
+.fetching-text {
+    color: #26b9b9;
+    line-height: 60px;
 }

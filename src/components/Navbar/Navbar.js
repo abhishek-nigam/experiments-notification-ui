@@ -12,6 +12,7 @@ const navbar = props => {
     return (
         <div className="navbar">
             <div className="navbar-item"></div>
+            {props.fetching ? <div className="navbar-item fetching-text">Fetching...</div> : null}
             <div className="navbar-item" id="sync-item">
                 <i className="fas fa-sync-alt" onClick={props.sync}></i>
             </div>

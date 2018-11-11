@@ -12,7 +12,7 @@ const notificationPanel = props => {
             {props.notifications.map(notification =>
                 <CSSTransition key={notification._id} timeout={300} classNames="notification">
                     <NotificationEntry
-
+                        unread={notification.unread}
                         author_image={notification.author_image}
                         author_name={notification.author_name}
                         author_action={notification.author_action}
