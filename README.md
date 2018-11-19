@@ -1,6 +1,8 @@
 # Notifications User Interface
 
-Userface interface for interacting reading/dismissing notifications as per [design](https://dribbble.com/shots/1463784-Notifications-Dropdown). It uses React and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Userface interface for interacting reading/dismissing notifications as per [design](https://dribbble.com/shots/1463784-Notifications-Dropdown)<br> 
+It uses React and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)<br>
+It uses [experiments-notification-ui-backend](https://github.com/abhishek-nigam/experiments-notification-ui-backend) API to fetch notifications
 
 Demonstration video [here](https://youtu.be/9N6GsXwXWho)
 
